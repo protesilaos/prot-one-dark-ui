@@ -1,56 +1,20 @@
-## One dark UI theme [![Build Status](https://travis-ci.org/atom/.svg?branch=master)](https://travis-ci.org/atom/)
+# Prot One dark UI
 
-A dark UI theme that adjusts to most Syntax themes.
+**EXPERIMENTAL. DO NOT USE IT WITHOUT ANY ONE OF [MY SYNTAX THEMES](https://atom.io/users/protesilaos/themes).**
 
-![](https://cloud.githubusercontent.com/assets/378023/6979859/96e416e8-da24-11e4-995c-00dcd84c276d.png)
+This theme is a fork of the otherwise excellent [One Dark UI](https://github.com/atom/one-dark-ui).  I have created it to serve the very basic need of a UI accompaniment to my syntax themes.
 
-> The font used in the screenshots is [Fira Mono](https://github.com/mozilla/Fira). Icons by [file-icons](https://atom.io/packages/file-icons).
+Each one of my colour schemes consists of a coherent sixteen-value palette. There are eight accent plus two sets of base values. The bases govern the background and foreground colours, which makes them mutually exclusive, even though they still belong to the same 'family' as it were. This means that every syntax theme actually uses twelve out of the sixteen colours. The other four are simply ignored.
 
-### Combine with other Syntax themes
+What this UI theme is meant to do is apply those four values to the interface. With my light themes it will create a rather high contrast between the editor and the other components, such as the side bar, the tab bar, and the status bar. Those will inherit the dark base. With dark themes, the difference will still be visible, with the components being darker than the editor, though far more subtle.
 
-There is a matching [Syntax theme](https://atom.io/themes/one-dark-syntax), but most other Syntax themes work fine as well.
+This package will be published once I have tested it extensively on all of my themes. I also need to resolve errors or conflicts that emerge when using it in combination with a syntax theme other than my own.
 
-![ + sepia](https://cloud.githubusercontent.com/assets/378023/6979865/af2d59da-da24-11e4-8ab6-974c50534b86.png)
-> One dark + [Sepia](https://atom.io/themes/sepia-syntax)
+If you are using my syntax themes and want to try this out, clone the repo and then type:
 
-![ chester](https://cloud.githubusercontent.com/assets/378023/6979876/cd0fca64-da24-11e4-9006-4f7e1ff80cad.png)
-> One dark + [Chester](https://atom.io/themes/chester-atom-syntax)
-
-### Install
-
-This theme is installed by default with Atom and can be activated by going to the __Settings > Themes__ section and selecting "One Dark" from the __UI Themes__ drop-down menu.
-
-### Settings
-
-![Theme settings](https://cloud.githubusercontent.com/assets/378023/15923548/cb3dc7ce-2e68-11e6-8a51-10801fb483bf.png)
-
-In the theme settings you can change the __Font Size__ to scale the whole UI up or down.
-
-Switch between 3 __Layout Modes__:
-
-1. `Auto` (default) - In Auto mode, the UI and font size will automatically change based on the window size.
-2. `Compact` - The UI stays compact to leave more space for the editor.
-3. `Spacious` - The UI is expanded, giving some breathing room.
-
-And pick a __Tab Sizing__ mode:
-
-1. `Auto` (default) - In Auto mode the tabs switch based on the window size.
-2. `Minimum` - In Mimimum mode the tabs will be as small as possible.
-3. `Even` - In Even mode all tabs will be the same size.
-
-### Customize
-
-It's also possible to resize only certain areas by adding the following to your `styles.less` (Use the DevTools to find the right selectors):
-
-```css
-.theme- {
-  .tab-bar { font-size: 18px; }
-  .tree-view { font-size: 14px; }
-  .status-bar { font-size: 12px; }
-}
+```shell
+cd ~/prot-one-dark-ui
+apm link
 ```
 
-### FAQ
-
-__Why do the colors change when I switch Syntax themes?__
-This UI theme uses the same background color as the choosen Syntax theme. In case that Syntax theme has a light background color, it only uses its hue, but otherwise stays dark. This lets you use dark-light combos.
+This creates a symbolic link with the Atom editor so that the theme can be selected from the settings menu. I repeat, **this is an experimental project**. Proceed at your own risk.
