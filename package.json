@@ -1,0 +1,17 @@
+{
+  "name": "prot-dark-ui",
+  "theme": "ui",
+  "version": "0.0.0",
+  "description": "Experimental fork of Atom One dark UI theme",
+  "keywords": [
+    "dark",
+    "adaptive",
+    "prot16",
+    "ui"
+  ],
+  "license": "MIT",
+  "repository": "https://github.com/protesilaos/prot-one-dark-ui",
+  "engines": {
+    "atom": ">0.40.0"
+  }
+}

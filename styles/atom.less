@@ -1,0 +1,86 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: @font-size;
+}
+
+atom-workspace {
+	background-color: @app-background-color;
+}
+
+
+// Scrollbars ------------------------------------
+
+.scrollbars-visible-always {
+	/deep/ ::-webkit-scrollbar {
+		width: 10px;
+		height: 10px;
+	}
+
+	/deep/ ::-webkit-scrollbar-track {
+		background: @scrollbar-background-color;
+	}
+
+	/deep/ ::-webkit-scrollbar-thumb {
+		border-radius: 5px;
+		border: 3px solid @scrollbar-background-color;
+		background: @scrollbar-color;
+		background-clip: content-box;
+	}
+
+	/deep/ ::-webkit-scrollbar-corner {
+		background: @scrollbar-background-color;
+	}
+
+	/deep/ ::-webkit-scrollbar-thumb:vertical:active {
+		border-radius: 0;
+		border-left-width: 0;
+		border-right-width: 0;
+	}
+
+	/deep/ ::-webkit-scrollbar-thumb:horizontal:active {
+		border-radius: 0;
+		border-top-width: 0;
+		border-bottom-width: 0;
+	}
+
+	atom-text-editor {
+		/deep/ ::-webkit-scrollbar {
+			width: 5px;
+			height: 10px;
+		}
+		/deep/ ::-webkit-scrollbar-track {
+			background: @scrollbar-background-color-editor;
+		}
+		/deep/ ::-webkit-scrollbar-corner {
+			background: @scrollbar-background-color-editor;
+		}
+		/deep/ ::-webkit-scrollbar-thumb {
+			border-color: fadeout(#000, 94%);
+			background: fadeout(#000, 94%);
+		}
+	}
+}
+
+// TODO: Move to a better place, not sure where it gets used
+.caret {
+  border-top: 5px solid #fff;
+  margin-top: -1px;
+}
+
+
+// Git status line number
+
+atom-text-editor .gutter .line-number.git-line-added,
+atom-text-editor::shadow .gutter .line-number.git-line-added {
+	border-left: 3px solid @text-color-added;
+	padding: calc(0.5em - 3px);
+}
+
+atom-text-editor .gutter .line-number.git-line-modified,
+atom-text-editor::shadow .gutter .line-number.git-line-modified {
+	border-left: 3px solid @text-color-modified;
+	padding: calc(0.5em - 3px);
+}
