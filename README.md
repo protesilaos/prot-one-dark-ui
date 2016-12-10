@@ -6,7 +6,7 @@ This theme is a fork of the otherwise excellent [One Dark UI](https://github.com
 
 ## The 'why'
 
-Each item in my [Prot16 collection](http://www.protesilaos.com/schemes) consists of a coherent sixteen-colour palette. There are eight accent plus two sets of base values.
+Each item in my [Prot16 collection](https://protesilaos.com/schemes) consists of a coherent sixteen-colour palette. There are eight accent plus two sets of base values.
 
 - The former are variations of red, orange, yellow, green, cyan, blue, violet, and magenta. They are common to either the light or dark version of a theme.
 - The latter govern the background and foreground colours that define the theme's instantiation as light or dark.
@@ -20,7 +20,7 @@ What this UI theme is meant to do is apply those four values to the interface.
 
 ## The 'when'
 
-This package will be published once I have tested it extensively on all of my themes. I also need to resolve errors or conflicts that emerge when using it in combination with a syntax theme other than my own. Personally I already use this UI theme as a local package. However it would be highly irresponsible to publish somethin in the official repositories and is well known to break things when sued with every syntax theme that was not designed by me.
+This package will be published once I have tested it extensively on all of my themes. I also need to resolve errors or conflicts that emerge when using it in combination with a syntax theme other than my own. Personally I already use this UI theme as a local package. However it would be highly irresponsible to publish something in the official repositories and is well known to break things when sued with every syntax theme that was not designed by me.
 
 If you are using my syntax themes and would like to try this out, clone this repo and then type the following commands in your terminal:
 
